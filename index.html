@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLXCK — Suit up. Operate in the dark.</title>
+  <meta name="description" content="Shadow-spec streetwear built for the city after dark. Drops monthly. Karachi · Lahore · Islamabad in 48h." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <span>B</span><span>L</span><span>X</span><span>C</span><span>K</span>
+      </div>
+      <div class="loader__meta">
+        <span class="loader__label">SUITING UP</span>
+        <span class="loader__count">000</span>
+      </div>
+      <div class="loader__bar"><i></i></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <!-- ============ OPS BAR ============ -->
+  <div class="ops-bar" role="region" aria-label="Site status">
+    <div class="ops-bar__inner">
+      <span class="ops-bar__tag"><span class="ops-bar__pulse" aria-hidden="true"></span>OPS</span>
+      <span>Free shipping over PKR 5,000</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>COD enabled nationwide</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>48h to KHI · LHE · ISB</span>
+      <span class="sep sep--last" aria-hidden="true">·</span>
+      <span class="ops-bar__cta">WhatsApp <strong>+92 300 0000000</strong></span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="site-header">
+    <div class="header__inner">
+      <a class="header__brand" href="#" aria-label="BLXCK home">
+        <span class="header__brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M2 2h22l6 6v22H8l-6-6V2z" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 9h7a3.5 3.5 0 0 1 0 7h-7V9zm0 7h8a3.5 3.5 0 0 1 0 7h-8v-7z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="header__brand-word">BLXCK</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Primary">
+        <a href="#drops">Drops</a>
+        <a href="#tees">Tees</a>
+        <a href="#hoodies">Hoodies</a>
+        <a href="#tracksuits">Tracksuits</a>
+        <a href="#bundles">Bundles</a>
+        <a href="#archive" class="header__nav-archive">Archive</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <a class="icon-btn icon-btn--hide-sm" href="#account" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-3.5 4-5 7-5s6 1.5 7 5"/></svg>
+        </a>
+        <a class="bag-btn" href="#cart" aria-label="Bag, 0 items">
+          <span>Bag</span><sup>00</sup>
+        </a>
+        <button class="header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#drops">Drops</a>
+    <a href="#tees">Tees</a>
+    <a href="#hoodies">Hoodies</a>
+    <a href="#tracksuits">Tracksuits</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#archive">Archive</a>
+    <div class="mobile-nav__divider"></div>
+    <a href="#account">Account</a>
+    <a href="#orders">Track order</a>
+    <a href="#whatsapp">WhatsApp ops</a>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Drop 07 — Shadow Protocol">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__spotlight"></div>
+        <div class="hero__scanlines"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="hero__media" aria-label="Drop 07 rotating showcase">
+        <div class="hero__media-stage">
+          <figure class="hero__media-item is-active" data-label="BATMAN SET · 07-A">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-4922.jpg?v=1776869835" alt="Batman Set" loading="eager">
+          </figure>
+          <figure class="hero__media-item" data-label="STAND COLLAR PUFFER · 07-B">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-1918.jpg?v=1766497664" alt="Stand Collar Puffer" loading="eager">
+          </figure>
+          <figure class="hero__media-item" data-label="FORGIVE HOODIE · 07-C">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/4E2E556E-4E18-40C9-9F01-E1488C2D4D41.png?v=1730315421" alt="Forgive Oversized Hoodie" loading="lazy">
+          </figure>
+          <figure class="hero__media-item" data-label="NORTH FACE HOODIE · 07-D">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/9964EA75-88C0-4BA4-9DEC-26E1401BCCBD.png?v=1759796698" alt="North Face Oversized Hoodie" loading="lazy">
+          </figure>
+          <figure class="hero__media-item" data-label="AIRFLOW BATMAN TEE · 07-E">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/B2D83CC4-047E-432D-9693-0C9A147644DB.jpg?v=1772243513" alt="AirFlow Batman Tee" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero__media-overlay" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">DROP 07 // SHADOW PROTOCOL // 11.05.26</p>
+          <h1 class="hero__title">
+            <span class="line"><span>The city</span></span>
+            <span class="line"><span>doesn&rsquo;t <em>sleep.</em></span></span>
+            <span class="line"><span>Neither do <em>you.</em></span></span>
+          </h1>
+          <p class="hero__sub">Shadow-spec streetwear. Built for the hours nobody else is awake.</p>
+          <div class="hero__cta">
+            <a class="btn btn--signal" data-magnetic data-cursor-label="SUIT UP" href="#drop07">
+              <span>Suit up</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" data-cursor-label="WATCH" href="#lookbook">
+              <span>Watch the drop</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">EST.</span>
+              <span class="hero__meta-value">2021 / KHI</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">SHIPPED</span>
+              <span class="hero__meta-value">12,400+</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">DROPS LIVE</span>
+              <span class="hero__meta-value">07</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media-hud" aria-hidden="true">
+        <div class="hero__crosshair">
+          <span></span><span></span><span></span><span></span>
+          <div class="hero__crosshair-dot"></div>
+        </div>
+        <p class="hero__hud-line">REC&nbsp;//&nbsp;23:47:08</p>
+        <p class="hero__hud-line">LOC&nbsp;//&nbsp;24.86°N&nbsp;67.00°E</p>
+        <p class="hero__hud-line hero__hud-line--mute">SIG&nbsp;//&nbsp;CLEAR</p>
+      </div>
+
+      <div class="hero__media-meta" aria-hidden="true">
+        <span class="hero__media-counter">01 / 05</span>
+        <span class="hero__media-name">BATMAN SET · 07-A</span>
+        <div class="hero__media-progress"><i></i></div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE STRIP ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>OPERATIVES IN 47 CITIES</span><span class="marquee__dot">●</span>
+        <span>12,000+ DROPS DELIVERED</span><span class="marquee__dot">●</span>
+        <span>0.4% RETURNS LAST QUARTER</span><span class="marquee__dot">●</span>
+        <span>FREE SHIPPING OVER PKR 5,000</span><span class="marquee__dot">●</span>
+        <span>COD NATIONWIDE</span><span class="marquee__dot">●</span>
+        <span>DROP 07 LIVE</span><span class="marquee__dot">●</span>
+        <span>OPERATIVES IN 47 CITIES</span><span class="marquee__dot">●</span>
+        <span>12,000+ DROPS DELIVERED</span><span class="marquee__dot">●</span>
+        <span>0.4% RETURNS LAST QUARTER</span><span class="marquee__dot">●</span>
+        <span>FREE SHIPPING OVER PKR 5,000</span><span class="marquee__dot">●</span>
+        <span>COD NATIONWIDE</span><span class="marquee__dot">●</span>
+        <span>DROP 07 LIVE</span><span class="marquee__dot">●</span>
+      </div>
+    </div>
+
+    <!-- ============ IMAGE STRIP (horizontal marquee) ============ -->
+    <section class="image-strip" aria-label="Brand visuals">
+      <div class="image-strip__track">
+        <figure class="image-strip__tile"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/C5A2B084-6555-4DFF-99C9-2742038C5325.jpg?v=1772471753" alt=""><figcaption>SHADOW · 07/01</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--tall"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-3431.jpg?v=1772224119" alt=""><figcaption>PATROL · 07/02</figcaption></figure>
+        <figure class="image-strip__tile"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/5C0F3C77-7D32-4DA0-9C5E-1CC9DF50D657.png?v=1764852086" alt=""><figcaption>STAKEOUT · 07/03</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--wide"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/2E63E152-AE7E-4F18-957E-BF00F6E3C53D.jpg?v=1772404314" alt=""><figcaption>VIGIL · 07/04</figcaption></figure>
+        <figure class="image-strip__tile"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/71824CB8-B32B-43FD-B272-BC3EEEE36BA8.jpg?v=1767143747" alt=""><figcaption>RECON · 07/05</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--tall"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/0ACC562C-0467-40E9-93CD-84852C78A7F3.jpg?v=1734975957" alt=""><figcaption>NIGHTSHIFT · 07/06</figcaption></figure>
+        <figure class="image-strip__tile"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-4509.jpg?v=1731959882" alt=""><figcaption>SILENT · 07/07</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--wide"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/04820499-5C51-4368-A473-324EC24C5608.jpg?v=1774895950" alt=""><figcaption>CIPHER · 07/08</figcaption></figure>
+        <!-- mirrored set for seamless loop -->
+        <figure class="image-strip__tile" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/C5A2B084-6555-4DFF-99C9-2742038C5325.jpg?v=1772471753" alt=""><figcaption>SHADOW · 07/01</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--tall" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-3431.jpg?v=1772224119" alt=""><figcaption>PATROL · 07/02</figcaption></figure>
+        <figure class="image-strip__tile" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/5C0F3C77-7D32-4DA0-9C5E-1CC9DF50D657.png?v=1764852086" alt=""><figcaption>STAKEOUT · 07/03</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--wide" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/2E63E152-AE7E-4F18-957E-BF00F6E3C53D.jpg?v=1772404314" alt=""><figcaption>VIGIL · 07/04</figcaption></figure>
+        <figure class="image-strip__tile" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/71824CB8-B32B-43FD-B272-BC3EEEE36BA8.jpg?v=1767143747" alt=""><figcaption>RECON · 07/05</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--tall" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/0ACC562C-0467-40E9-93CD-84852C78A7F3.jpg?v=1734975957" alt=""><figcaption>NIGHTSHIFT · 07/06</figcaption></figure>
+        <figure class="image-strip__tile" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-4509.jpg?v=1731959882" alt=""><figcaption>SILENT · 07/07</figcaption></figure>
+        <figure class="image-strip__tile image-strip__tile--wide" aria-hidden="true"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/04820499-5C51-4368-A473-324EC24C5608.jpg?v=1774895950" alt=""><figcaption>CIPHER · 07/08</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED DROP ============ -->
+    <section class="featured" id="drop07">
+      <div class="featured__cover" data-reveal>
+        <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-5060.jpg?v=1777297102" alt="Superman Set — Shadow Protocol cover" loading="lazy" />
+        <div class="featured__corner featured__corner--tl"></div>
+        <div class="featured__corner featured__corner--tr"></div>
+        <div class="featured__corner featured__corner--bl"></div>
+        <div class="featured__corner featured__corner--br"></div>
+        <div class="featured__overlay">
+          <p class="kicker kicker--signal">// FILE 07-A</p>
+          <p class="featured__codename">SHADOW<br/>PROTOCOL</p>
+          <p class="featured__edition">14 PIECES · LIMITED RUN</p>
+        </div>
+      </div>
+
+      <div class="featured__copy" data-reveal>
+        <p class="kicker">DROP 07 / 11.05.26 / 23:00 PKT</p>
+        <h2 class="featured__title">Built for the<br/><em>quiet hours.</em></h2>
+        <p class="featured__body">Heavy cottons, technical fleece, blacked-out hardware. No logos screaming at the camera. The drop is built to disappear in low light and survive a soft monsoon.</p>
+        <ul class="featured__specs">
+          <li><span>FABRIC</span><span>320 GSM HEAVY COTTON</span></li>
+          <li><span>HARDWARE</span><span>MATTE BLACK YKK</span></li>
+          <li><span>FIT</span><span>RELAXED · OVERSIZED CUT</span></li>
+          <li><span>SIZES</span><span>S — XXL</span></li>
+          <li><span>SHIPS</span><span>FROM 11.05.26</span></li>
+        </ul>
+        <a class="btn btn--signal" data-magnetic data-cursor-label="ENTER" href="#drops">
+          <span>Enter the drop</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ DROPS GRID ============ -->
+    <section class="drops" id="drops">
+      <header class="section-head">
+        <p class="kicker">// DROP 07 / SHADOW PROTOCOL / 14 PIECES</p>
+        <div class="section-head__row">
+          <h2 class="section-head__title">The loadout.</h2>
+          <a href="#archive" class="section-head__link">Browse all 14 <span>&rarr;</span></a>
+        </div>
+      </header>
+
+      <div class="drops__grid">
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-1918.jpg?v=1766497664" alt="Stand Collar Puffer Jacket" loading="lazy">
+            <span class="drop-card__code">07/01</span>
+            <span class="drop-card__chip drop-card__chip--new">NEW</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Stand Collar Puffer to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Stand Collar Puffer</h3>
+            <p>Tech shell · blacked-out stand collar · matte zip</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 6,800</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/4E2E556E-4E18-40C9-9F01-E1488C2D4D41.png?v=1730315421" alt="Forgive Oversized Hoodie" loading="lazy">
+            <span class="drop-card__code">07/02</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Forgive Hoodie to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Forgive Hoodie</h3>
+            <p>380 GSM heavy fleece · oversized cut · embroidered</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 4,200</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/0905DFEF-6A29-4948-824D-7ED0FECB4DD0.jpg?v=1775872194" alt="Batman Drop Shoulder Tee" loading="lazy">
+            <span class="drop-card__code">07/03</span>
+            <span class="drop-card__chip drop-card__chip--low">LOW STOCK</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Batman Tee to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Batman Tee</h3>
+            <p>240 GSM heavy cotton · drop shoulder · chest print</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 1,800</span>
+              <span class="drop-card__sizes">S M L XL XXL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/10F73263-B553-4A75-BEA8-9385B9504357.jpg?v=1775871915" alt="Vegeta Drop Shoulder Tee" loading="lazy">
+            <span class="drop-card__code">07/04</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Vegeta Tee to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Vegeta Tee</h3>
+            <p>240 GSM · oversized cut · signature graphic</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 1,800</span>
+              <span class="drop-card__sizes">S M L XL XXL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/3246F52E-D487-4E7B-82A3-B2187DEC321F.jpg?v=1770899145" alt="Oversized Open Jogger" loading="lazy">
+            <span class="drop-card__code">07/05</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Open Jogger to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Open Jogger</h3>
+            <p>Heavy cotton · open hem · relaxed taper</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 2,800</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/9964EA75-88C0-4BA4-9DEC-26E1401BCCBD.png?v=1759796698" alt="North Face Oversized Hoodie" loading="lazy">
+            <span class="drop-card__code">07/06</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add North Face Hoodie to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>NorthFace Hoodie</h3>
+            <p>Heavy fleece · oversized cut · embroidered patch</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 5,200</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/C433E96C-F0BB-4379-8584-516789808D12.jpg?v=1762209220" alt="Adidas Fleece Piping Jacket" loading="lazy">
+            <span class="drop-card__code">07/07</span>
+            <span class="drop-card__chip drop-card__chip--signal">CHAPTER PIECE</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Piping Jacket to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Piping Jacket</h3>
+            <p>Brushed fleece · contrast piping · full zip</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 5,400</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="drop-card" data-reveal>
+          <div class="drop-card__media">
+            <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/B01C23BF-8567-4986-90C8-954C683CB938.png?v=1728860496" alt="Ace Black Hoodie" loading="lazy">
+            <span class="drop-card__code">07/08</span>
+            <button class="drop-card__add" data-cursor-label="ADD" aria-label="Add Ace Hoodie to bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="drop-card__info">
+            <h3>Ace Hoodie</h3>
+            <p>320 GSM cotton fleece · kangaroo pocket · ribbed cuff</p>
+            <div class="drop-card__row">
+              <span class="drop-card__price">PKR 3,800</span>
+              <span class="drop-card__sizes">S M L XL</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ GIANT TEXT BAND ============ -->
+    <div class="text-band" aria-hidden="true">
+      <div class="text-band__track">
+        <span class="text-band__word">Operate in the dark</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Shadow Protocol</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Drop 07 live</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Suit up</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Operate in the dark</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Shadow Protocol</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Drop 07 live</span>
+        <span class="text-band__star">&#10039;</span>
+        <span class="text-band__word">Suit up</span>
+        <span class="text-band__star">&#10039;</span>
+      </div>
+    </div>
+
+    <!-- ============ LOOKBOOK ============ -->
+    <section class="lookbook" id="lookbook">
+      <div class="lookbook__media" data-reveal>
+        <img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-3452.jpg?v=1772230880" alt="Night ops lookbook" loading="lazy">
+        <div class="lookbook__timecode">23:47:08 · KHI</div>
+      </div>
+      <div class="lookbook__copy" data-reveal>
+        <p class="kicker">// LOOKBOOK / NIGHT OPS / KARACHI</p>
+        <h2 class="lookbook__title"><em>Operate</em><br/>in the dark.</h2>
+        <p class="lookbook__body">Photographed on assignment between 11pm and 4am. Saddar, Burns Road, the Empress Market loading bays. Real city, real cuts, real low light.</p>
+        <div class="lookbook__stats">
+          <div><span>17</span><span>EXPOSURES</span></div>
+          <div><span>04</span><span>LOCATIONS</span></div>
+          <div><span>01</span><span>NIGHT</span></div>
+        </div>
+        <a class="btn btn--ghost btn--inverse" data-cursor-label="VIEW" href="#"><span>View full lookbook</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ LOADOUTS / CATEGORIES ============ -->
+    <section class="loadouts">
+      <header class="section-head">
+        <p class="kicker">// CHOOSE YOUR LOADOUT</p>
+        <div class="section-head__row">
+          <h2 class="section-head__title">Pick a class.</h2>
+          <p class="section-head__deck">Four kits. Mix as needed.</p>
+        </div>
+      </header>
+
+      <div class="loadouts__grid">
+        <a class="loadout-card" data-cursor-label="ENTER" href="#tees" data-reveal>
+          <div class="loadout-card__media"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/05E2ABA2-8585-45B5-BD4F-2B5B909AB95F.jpg?v=1775872193" alt="" loading="lazy"></div>
+          <div class="loadout-card__body">
+            <span class="loadout-card__num">01</span>
+            <h3>Tees</h3>
+            <p>32 pieces · from PKR 1,400</p>
+            <span class="loadout-card__cta">Enter<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="loadout-card" data-cursor-label="ENTER" href="#hoodies" data-reveal>
+          <div class="loadout-card__media"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/E62E3331-EFD3-4CAE-9E51-FF403C4458FA.png?v=1759797036" alt="" loading="lazy"></div>
+          <div class="loadout-card__body">
+            <span class="loadout-card__num">02</span>
+            <h3>Hoodies</h3>
+            <p>18 pieces · from PKR 3,800</p>
+            <span class="loadout-card__cta">Enter<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="loadout-card" data-cursor-label="ENTER" href="#tracksuits" data-reveal>
+          <div class="loadout-card__media"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/2F7F5630-B221-4BC8-A673-B97501130B84.jpg?v=1772223413" alt="" loading="lazy"></div>
+          <div class="loadout-card__body">
+            <span class="loadout-card__num">03</span>
+            <h3>Tracksuits</h3>
+            <p>11 pieces · from PKR 6,400</p>
+            <span class="loadout-card__cta">Enter<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="loadout-card" data-cursor-label="ENTER" href="#bundles" data-reveal>
+          <div class="loadout-card__media"><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/FC32A202-485F-4A86-8748-8510C7443046.jpg?v=1778260830" alt="" loading="lazy"></div>
+          <div class="loadout-card__body">
+            <span class="loadout-card__num">04</span>
+            <h3>Bundles</h3>
+            <p>8 packs · from PKR 2,800</p>
+            <span class="loadout-card__cta">Enter<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" data-reveal>
+      <p class="kicker">// MANIFESTO</p>
+      <p class="manifesto__body">
+        <span>We don&rsquo;t do loud.</span>
+        <span>We don&rsquo;t do logos that scream.</span>
+        <span>We make <em>one color</em>, in <em>heavy weights</em>, with <em>blacked-out hardware</em>.</span>
+        <span>Built for the people who do the work after everyone&rsquo;s gone home.</span>
+      </p>
+      <p class="manifesto__sig">— BLXCK&nbsp;//&nbsp;Karachi, 2021&nbsp;—</p>
+    </section>
+
+    <!-- ============ FIELD NOTES ============ -->
+    <section class="reports">
+      <header class="section-head">
+        <p class="kicker">// FIELD NOTES / VERIFIED PURCHASES</p>
+        <div class="section-head__row">
+          <h2 class="section-head__title">From the city.</h2>
+          <p class="section-head__deck">142 reviews · 4.9 / 5 average</p>
+        </div>
+      </header>
+
+      <div class="reports__grid">
+        <article class="report" data-reveal>
+          <div class="report__rating" aria-label="5 of 5">★★★★★</div>
+          <p class="report__quote">&ldquo;The Forgive Hoodie survived a soft monsoon and came out the other side without a stretched cuff. I&rsquo;ve owned three this year.&rdquo;</p>
+          <footer class="report__by">
+            <span class="report__name">Ahsan F.</span>
+            <span class="report__loc">Karachi · 14 orders</span>
+          </footer>
+        </article>
+
+        <article class="report" data-reveal>
+          <div class="report__rating" aria-label="5 of 5">★★★★★</div>
+          <p class="report__quote">&ldquo;Heaviest cotton you can buy in Pakistan at this price. Drop 06 tees are still holding shape after fifty washes.&rdquo;</p>
+          <footer class="report__by">
+            <span class="report__name">Irfan M.</span>
+            <span class="report__loc">Lahore · 9 orders</span>
+          </footer>
+        </article>
+
+        <article class="report" data-reveal>
+          <div class="report__rating" aria-label="5 of 5">★★★★★</div>
+          <p class="report__quote">&ldquo;Ordered the Open Jogger Friday, in my hands Sunday. Karachi to Islamabad. The fit is exactly what the photos showed.&rdquo;</p>
+          <footer class="report__by">
+            <span class="report__name">Habiba R.</span>
+            <span class="report__loc">Islamabad · first order</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="reports__foot">
+        <a href="#reviews">All 142 reviews <span>&rarr;</span></a>
+      </div>
+    </section>
+
+    <!-- ============ DISPATCH LOG ============ -->
+    <section class="dispatch">
+      <header class="section-head">
+        <p class="kicker">// DISPATCH LOG / @blackxoriginal</p>
+        <div class="section-head__row">
+          <h2 class="section-head__title">From the field.</h2>
+          <a href="#instagram" class="section-head__link">Follow the channel <span>&rarr;</span></a>
+        </div>
+      </header>
+
+      <div class="dispatch__grid">
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/576F7F97-817E-4248-9A0C-2C6434FCA03B.jpg?v=1778260950" alt=""><span>23.04.26</span></a>
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/FCB01AC7-CED0-4FEC-99B6-F52C10B53A24.png?v=1763811654" alt=""><span>20.04.26</span></a>
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/794596D6-5E64-4F46-ADB4-A6F81FC9B5C5.png?v=1761445688" alt=""><span>18.04.26</span></a>
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/IMG-1400.png?v=1763811654" alt=""><span>14.04.26</span></a>
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/16E4B718-E8BC-49B5-A5FB-18F30A580A20.jpg?v=1772404394" alt=""><span>10.04.26</span></a>
+        <a class="dispatch__tile" href="#" data-cursor-label="OPEN" data-reveal><img src="https://cdn.shopify.com/s/files/1/0588/4490/5662/files/9A9DA055-62F0-47B0-9260-90F63249146D.jpg?v=1772322842" alt=""><span>07.04.26</span></a>
+      </div>
+    </section>
+
+    <!-- ============ ENLIST ============ -->
+    <section class="enlist">
+      <div class="enlist__inner" data-reveal>
+        <p class="kicker kicker--signal">// ENLIST</p>
+        <h2 class="enlist__title">Get the drop<br/>before the city does.</h2>
+        <p class="enlist__body">One email a month. Drops, restocks, after-hours releases. Unsubscribe anytime — we hate spam as much as you do.</p>
+        <form class="enlist__form" novalidate>
+          <input type="email" placeholder="Operative email" aria-label="Email" required>
+          <button type="submit">
+            <span>Sign in</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <p class="enlist__note">Plus an early code on your first order.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__wordmark">BLXCK</p>
+        <p class="footer__tag">Suit up. Operate in the dark.</p>
+        <p class="footer__est">EST. 2021&nbsp;&nbsp;//&nbsp;&nbsp;KARACHI, PK</p>
+        <div class="footer__channels">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.5 2.5 4.5 5 5"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21l1.7-5.1A8 8 0 1 1 9 20.4L3 21z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5v5l5-2.5-5-2.5z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Shop</h4>
+          <a href="#drops">Drop 07</a>
+          <a href="#tees">Tees</a>
+          <a href="#hoodies">Hoodies</a>
+          <a href="#tracksuits">Tracksuits</a>
+          <a href="#bundles">Bundles</a>
+          <a href="#archive">Archive</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Track order</a>
+          <a href="#">Returns & exchange</a>
+          <a href="#">Sizing guide</a>
+          <a href="#">Care guide</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div>
+          <h4>Ops desk</h4>
+          <a href="#"><strong>+92 300 0000000</strong></a>
+          <a href="#">support@blxck.pk</a>
+          <a href="#">Mon–Sat&nbsp;&nbsp;11:00–20:00 PKT</a>
+          <a href="#">Bulk orders</a>
+        </div>
+        <div>
+          <h4>Brand</h4>
+          <a href="#">Manifesto</a>
+          <a href="#">Lookbook archive</a>
+          <a href="#">Press</a>
+          <a href="#">Wholesale</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__pay">
+      <span>WE TAKE</span>
+      <span class="pay-chip">COD</span>
+      <span class="pay-chip">JazzCash</span>
+      <span class="pay-chip">EasyPaisa</span>
+      <span class="pay-chip">VISA</span>
+      <span class="pay-chip">MASTER</span>
+      <span class="pay-chip">BANK TRANSFER</span>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 BLXCK · Karachi, Pakistan</p>
+      <p class="footer__legal">
+        <a href="#">Privacy</a>
+        <span>·</span>
+        <a href="#">Terms</a>
+        <span>·</span>
+        <a href="#">FBR registered</a>
+        <span>·</span>
+        <a href="#">PECA compliant</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Cursor spotlight (desktop only) -->
+  <div class="cursor-spot" aria-hidden="true">
+    <span class="cursor-spot__dot"></span>
+    <span class="cursor-spot__label"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
