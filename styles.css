@@ -408,30 +408,8 @@ body {
 .hero__bg {
   position: absolute;
   inset: 0;
-  z-index: -1;
-}
-.hero__skyline {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(255, 230, 0, 0.06), transparent 70%),
-    linear-gradient(180deg, #000 0%, #050505 60%, #0a0a0a 100%);
-}
-.hero__skyline::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 38%;
-  background-image:
-    /* skyline silhouette via repeating gradients */
-    linear-gradient(180deg, transparent 0%, #000 60%, #000 100%),
-    repeating-linear-gradient(90deg,
-      #000 0 14px, #050505 14px 22px, #000 22px 56px, #0a0a0a 56px 78px,
-      #000 78px 110px, #060606 110px 128px, #000 128px 160px, #080808 160px 188px,
-      #000 188px 224px);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 35%, #000 100%);
-          mask-image: linear-gradient(180deg, transparent 0%, #000 35%, #000 100%);
-  opacity: 0.75;
+  z-index: 1;
+  pointer-events: none;
 }
 .hero__spotlight {
   position: absolute;
@@ -1892,9 +1870,6 @@ body.is-loading { overflow: hidden; }
 /* ============================================================
    HERO MEDIA — rotating product showcase (right column)
    ============================================================ */
-/* hero__bg sits ABOVE media for the spotlight/grain blend */
-.hero__bg { z-index: 1; }
-
 /* full-bleed rotating media that morphs in after the text */
 .hero__media {
   position: absolute;

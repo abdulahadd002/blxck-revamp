@@ -284,11 +284,11 @@
         setTimeout(() => (input.style.borderColor = ''), 1600);
         return;
       }
-      if (btnLabel) btnLabel.textContent = 'Signed in';
+      if (btnLabel) btnLabel.textContent = 'Enlisted';
       input.value = '';
       input.disabled = true;
       setTimeout(() => {
-        if (btnLabel) btnLabel.textContent = 'Sign in';
+        if (btnLabel) btnLabel.textContent = 'Enlist';
         input.disabled = false;
       }, 3000);
     });
