@@ -1465,6 +1465,38 @@ body {
 .footer__legal a:hover { color: var(--signal); }
 .footer__legal span { color: var(--text-deep); }
 
+.footer__powered {
+  max-width: var(--container);
+  margin: 24px auto 0;
+  padding: 18px 0 4px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer__powered a {
+  position: relative;
+  color: var(--signal);
+  font-weight: 700;
+  transition: color 0.3s var(--ease-quad);
+}
+.footer__powered a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -3px;
+  width: 0; height: 1px;
+  background: var(--signal);
+  transition: width 0.35s var(--ease-signature);
+}
+.footer__powered a:hover::after { width: 100%; }
+
 /* ============================================================
    CURSOR (desktop only) — ring with label
    ============================================================ */
